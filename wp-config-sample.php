@@ -14,21 +14,18 @@
  * @package WordPress
  */
 
-// ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
+define('DB_NAME', 'database_name_here');
 
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+define('DB_USER', 'username_here');
 
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+define('DB_PASSWORD', 'password_here');
 
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -45,14 +42,15 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         ':akDn`*t|Q&s87N,K+$(NXatg!|[rOwI$6{&v_`FtiK,5!s;+{l9* ,.mTLSWM*9');
-define('SECURE_AUTH_KEY',  'pCwcn??$CPq!-$g5a`qto6g}`+B@2$<Y^V^{d1-p8-G{E<0 k_m%JLebA-g)){#z');
-define('LOGGED_IN_KEY',    '~@+tXEffe6*c_A?:8T*Md^ tZ!/sLW{efu4D{(Q4+Jpu2QaR ik[/4[QUewon`&Q');
-define('NONCE_KEY',        ';-WQ[4%-amk?!l={#W2Q_= ^3Wq%Qu@|gji3x#xLf>B@`A 19N/z!l,QdANULqa|');
-define('AUTH_SALT',        'e K8D?VTzH9<x!pUMBl%|fOHLZ)VbDYqXIc?*J>RLg+U!di8uln<.%Ag]iR;QMV}');
-define('SECURE_AUTH_SALT', '+T/a;]<X:OFIAg`2?azLJ3nQ2W)w$#}<?gVW*`D?dzi07{$j.M@d#Dj|2S?:2r?#');
-define('LOGGED_IN_SALT',   'Co&^g<Y-f{kND|jZn}vNet(s1]`0{=ny!nyZrD!;JLVc{f?3xi9-`;I3|6j-g*Mf');
-define('NONCE_SALT',       '2+|TlT+7aAdTur:$[=<-0Hm7!yObNe%)A{{h2u.v,{},):m{+X2;5dg~]]w$=Z,M');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
+
 /**#@-*/
 
 /**
